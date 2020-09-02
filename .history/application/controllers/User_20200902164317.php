@@ -38,7 +38,7 @@ class User extends CI_controller{
      
    }
 
-	function index(){
+	function create(){
 		 $this->load->model('User_model'); 
 		 $this->form_validation->set_rules('name','Name','required');
 		 $this->form_validation->set_rules('email','Email','required','valid_email');
